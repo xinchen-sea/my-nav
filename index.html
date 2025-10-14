@@ -55,6 +55,27 @@
                 background: #3c3c3c;
                 color: #d8d8d8;
         }
+        .custom-footer {
+                width: 100%;
+                text-align: center;
+                font-size: 1.1rem;
+                margin: 38px 0 0 0;
+                transition: color 0.3s;
+        }
+        .light-mode .custom-footer {
+                color: #555;
+        }
+        .dark-mode .custom-footer {
+                color: #ccc;
+        }
+        .custom-footer a {
+                color: inherit;
+                text-decoration: underline;
+                transition: color 0.3s;
+        }
+        .custom-footer a:hover {
+                color: #0078ff;
+        }
         </style>
 
 </head>
@@ -416,7 +437,6 @@
                                                                                 
                                                         </div>
                                                 </div>
-
                                                 <div class="col-sm-6 col-md-4 mb-3 dh">
                                                         <div class="row">
                                                                 <div class="col-xs-12"><strong class="link-list-tit"
@@ -611,7 +631,7 @@
         <script src="./dist/js/zui.js"></script>
         <script src="./layer/layer.js"></script>
         <script src="./js/js.js?v=6.2.4"></script>
-        // 监听用户主题
+        <!-- // 监听用户主题 -->
         <script>
         // 函数：切换主题
         function toggleTheme() {
@@ -640,6 +660,10 @@
             document.body.classList.remove('dark-mode');
         }
         </script>
+        <footer class="custom-footer">
+                改编自 <a href="https://zjuers.com" 
+                target="_blank">
+                zjuers轻首页</a>
+        </footer>
 </body>
-
 </html>
